@@ -12,7 +12,9 @@
   "homepage": "https://github.com/plotly/dash",
   "main": "dist/index.js",
   "scripts": {
-    "build": "webpack --display-reasons --bail"
+    "build": "webpack --display-reasons --bail",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "Marc-André Rivet",
   "license": "MIT",
@@ -27,5 +29,9 @@
   },
   "files": [
     "dist/index.js"
-  ]
+  ],
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
+  }
 }
