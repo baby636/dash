@@ -11,13 +11,16 @@
     "build:js": "webpack --mode production",
     "setup": "python setup.py sdist",
     "build:py_and_r": "dash-generate-components ./src/components dash_generator_test_component_nested && cp base/** dash_generator_test_component_nested/ && dash-generate-components ./src/components dash_generator_test_component_nested --r-prefix 'dgtc_nested'",
-    "build": "run-s build:js build:py_and_r setup"
+    "build": "run-s build:js build:py_and_r setup",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "Chris Parmer <chris@plotly.com>",
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.6.0",
-    "react-docgen": "^3.0.0"
+    "react-docgen": "^3.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.0",
@@ -35,5 +38,6 @@
   "peerDependencies": {
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
-  }
+  },
+  "snyk": true
 }
