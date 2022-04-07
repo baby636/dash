@@ -17,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.6.0",
-    "react-docgen": "^3.0.0"
+    "react-docgen": "^5.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.0",
