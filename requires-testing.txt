@@ -3,7 +3,7 @@ pytest==4.6.9;python_version=="2.7"
 pytest-sugar==0.9.2
 pytest-mock==2.0.0
 lxml==4.5.0
-selenium==3.141.0
+selenium==4.15.1
 percy==2.0.2
 requests[security]==2.21.0
 beautifulsoup4==4.8.2
