@@ -6,3 +6,4 @@ dash-core-components==1.10.2
 dash-html-components==1.0.3
 dash-table==4.9.0
 future
+werkzeug>=3.0.3 # not directly required, pinned by Snyk to avoid a vulnerability
